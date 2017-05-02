@@ -1,0 +1,123 @@
+#Задание1
+def avg(list):
+    a = 0
+    for i in list:
+        a += i
+    return a / len(list)
+
+print(avg([1,5,8,54,21,33,115,99,66]))
+
+
+
+#Задание2
+def getNumbers(string):
+    newList = string.split()
+    nnList = []
+    for i in newList:
+        nnList.append(int(i))
+    return nnList
+
+
+print(getNumbers("1 5 8 11 54 33 21 77 92"))
+
+
+
+#Задание3
+def calculateAvg(string):
+    return avg(getNumbers(string))
+
+
+def getNumbers(string):
+    newList = string.split()
+    nnList = []
+    for i in newList:
+        nnList.append(int(i))
+    return nnList
+
+
+def avg(list):
+    a = 0
+    for i in list:
+        a += i
+    return a / len(list)
+
+
+print(calculateAvg("1 5 8 11 54 33 21 77 92 555"))
+
+
+
+#Задание4
+def isID(string):
+    if string == "":
+        return False
+    if not (string[0].isalpha() or string[0] == "_"):
+        return False
+    for i in string[1:]:
+        if not (i.isalnum() or i == "_"):
+            return False
+    return True
+    
+print(isID("ffh45h56htgh5g___gfg"))
+
+
+
+#Задание5
+abc = {}
+number = 0
+
+def getIDNum(string):
+    global abc,number
+    if string in abc:
+        return abc[string]
+    abc[string] = number
+    number += 1
+    return abc[string]
+  
+  
+print(getIDNum("ssssssss"))
+print(getIDNum("ssssssss"))
+print(getIDNum("aaaaaaaa"))
+print(getIDNum("ssssssss"))
+print(getIDNum("dddddddd"))
+print(getIDNum("aaaaaaaa"))
+
+
+
+#Задание6
+abc = {}
+number = 0
+
+def getIDNum(string):
+    global abc,number
+    if string in abc:
+        return abc[string]
+    abc[string] = number
+    number += 1
+    return abc[string]
+  
+
+def isID(string):
+    if string == "":
+        return False
+    if not (string[0].isalpha() or string[0] == "_"):
+        return False
+    for i in string[1:]:
+        if not (i.isalnum() or i == "_"):
+            return False
+    return True
+    
+    
+def translate(string):
+    newList = string.split()
+    nnList = []
+    for i in newList:
+        if i.isdigit():
+            nnList.append(int(i))
+        elif isID(i):
+            nnList.append(getIDNum(i))
+        else:
+            nnList.append(i)
+    return nnList
+  
+  
+print(translate("( 22 + 33 ) * a - 121 // 11 + b - a"))
