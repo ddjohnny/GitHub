@@ -1,0 +1,42 @@
+#1
+F = [-1]*1000
+
+def fib(n):
+    global F
+    if F[n] > -1:
+        return F[n]
+    if n == 0 or n == 1:
+        F[n] = n
+        return F[n]
+    else:
+        F[n] = fib(n-1) + fib(n-2)
+        return F[n]
+
+print(fib(501))
+
+
+#2
+def fib(n):
+    F = [-1]*(n+1)
+    F[0],F[1] = 0,1
+
+    for i in range(2,n+1):
+        F[i] = F[i-1] + F[i-2]
+    return F[n]
+
+print(fib(11))
+
+
+#3
+def LCS(X,Y):
+    c = [([0]*(len(Y)+1))]*(len(X)+1)
+
+    for i in range(1,len(X)+1):
+        for j in range(1,len(Y)+1):
+            if X[i-1] == Y[j-1]:
+                c[i][j] = c[i-1][j-1]+1
+            else:
+                c[i][j] = max(c[i-1][j],c[i][j-1])
+    return c[len(X)][len(Y)]
+
+print(LCS("4gghjyhg","3htghyhj"))
