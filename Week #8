@@ -1,0 +1,41 @@
+class Stack:
+    def __init__(self):
+        self.stackItems = []
+
+    def isEmpty(self):
+        if self.stackItems == []:
+            return True
+
+    def push(self,elem):
+        self.stackItems.append(elem)
+
+    def pop(self):
+        if self.isEmpty():
+            raise ValueError
+        else:
+            return self.stackItems.pop()
+
+
+def postfixCalc(A):
+    theStack = Stack()
+    numbers = ['0','1','2','3','4','5','6','7','8','9']
+    operations = ['+','-','*','/']
+    for i in A:
+        if i in numbers:
+            theStack.push(i)
+        if i in operations:
+            a = int(theStack.pop())
+            b = int(theStack.pop())
+            if i == '+':
+                p = a + b
+            if i == '-':
+                p = a - b
+            if i == '*':
+                p = a * b
+            if i == "/":
+                p = a / b
+            theStack.push(p)
+    return theStack.pop()
+
+
+print(postfixCalc(['2','5','+','6','*']))
