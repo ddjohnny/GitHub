@@ -1,0 +1,30 @@
+#1
+def erat(n):
+    mas = list(range(2,n+1))
+    print(mas)
+    i = 2
+    
+    while i**2 < n:
+        for j in range(2, n//i+1):
+            mas[i*j-2] = 0
+        i += 1
+        print(mas)
+        
+        
+print(erat(20))
+
+
+#2
+def dct(string):
+    letters = dict()
+    for i in string.lower():
+        if i in letters:
+            letters[i] += 1
+        else:
+            letters[i] = 1
+        
+    for i in letters:
+        print(i + ": " + str(letters[i]))
+    
+        
+print(dct("In the morning I drink a cup of coffee"))
