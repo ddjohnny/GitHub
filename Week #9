@@ -1,0 +1,41 @@
+#1
+def inf(a):
+    if a == None:
+        print("None")
+        return
+    inf(a[1])
+    print(a[0])
+    inf(a[2])
+    
+inf([1,[2,None,None],[3,None,None]])
+
+
+#2
+def post(a):
+    if a == None:
+        print("None")
+        return
+    post(a[1])
+    post(a[2])
+    print(a[0])
+    
+post([1,[2,None,None],[3,None,None]])
+
+
+
+#3
+def bin(a,k):
+    if a == None:
+        return False
+    if k == a[0]:
+        return True
+    if k != a[0]:
+        if k < a[0]:
+            return bin(a[1],k)
+        if k > a[0]:
+            return bin(a[2],k)
+            
+    
+
+    
+print(bin([5,[2,[1,None,None],[4,[3,None,None],[8,None,None]]],None],3))
