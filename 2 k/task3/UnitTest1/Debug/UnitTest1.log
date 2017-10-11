@@ -1,0 +1,16 @@
+﻿Сборка начата 11.10.2017 11:17:16.
+     1>Проект "C:\Users\Evgeny\documents\visual studio 2013\Projects\task3\UnitTest1\UnitTest1.vcxproj" в узле 3 (целевые объекты Build).
+     1>ClCompile:
+         D:\Visual Studio 2013 Ultimate\VC\bin\CL.exe /c /I"D:\Visual Studio 2013 Ultimate\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\UnitTest1.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /FC /errorReport:prompt unittest1.cpp
+         unittest1.cpp
+     1>c:\users\evgeny\documents\visual studio 2013\projects\task3\unittest1\unittest1.cpp(16): warning C4305: аргумент: усечение из "int" к "bool"
+     1>c:\users\evgeny\documents\visual studio 2013\projects\task3\unittest1\unittest1.cpp(21): warning C4305: аргумент: усечение из "int" к "bool"
+       Link:
+         D:\Visual Studio 2013 Ultimate\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Evgeny\documents\visual studio 2013\Projects\task3\Debug\UnitTest1.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Visual Studio 2013 Ultimate\VC\UnitTest\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Evgeny\documents\visual studio 2013\Projects\task3\Debug\UnitTest1.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Evgeny\documents\visual studio 2013\Projects\task3\Debug\UnitTest1.lib" /MACHINE:X86 /DLL Debug\stdafx.obj
+         Debug\unittest1.obj
+         UnitTest1.vcxproj -> C:\Users\Evgeny\documents\visual studio 2013\Projects\task3\Debug\UnitTest1.dll
+     1>Сборка проекта "C:\Users\Evgeny\documents\visual studio 2013\Projects\task3\UnitTest1\UnitTest1.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:00.55

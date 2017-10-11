@@ -1,0 +1,15 @@
+﻿Сборка начата 11.10.2017 10:52:27.
+     1>Проект "C:\Users\Evgeny\documents\visual studio 2013\Projects\task3\task3\task3.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         D:\Visual Studio 2013 Ultimate\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt num1.cpp
+         num1.cpp
+       Link:
+         D:\Visual Studio 2013 Ultimate\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Evgeny\documents\visual studio 2013\Projects\task3\Release\task3.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Evgeny\documents\visual studio 2013\Projects\task3\Release\task3.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Evgeny\documents\visual studio 2013\Projects\task3\Release\task3.lib" /MACHINE:X86 /SAFESEH Release\num1.obj
+         Создание кода
+         Создание кода завершено
+         task3.vcxproj -> C:\Users\Evgeny\documents\visual studio 2013\Projects\task3\Release\task3.exe
+     1>Сборка проекта "C:\Users\Evgeny\documents\visual studio 2013\Projects\task3\task3\task3.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:01.23
