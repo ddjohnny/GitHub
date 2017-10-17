@@ -1,0 +1,18 @@
+﻿Сборка начата 17.10.2017 19:39:43.
+     1>Проект "C:\Users\Evgeny\documents\visual studio 2013\Projects\taskk4\taskk4\taskk4.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         D:\Visual Studio 2013 Ultimate\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt task4.cpp
+         task4.cpp
+     1>c:\users\evgeny\documents\visual studio 2013\projects\taskk4\taskk4\task4.cpp(15): warning C4018: <: несоответствие типов со знаком и без знака
+     1>c:\users\evgeny\documents\visual studio 2013\projects\taskk4\taskk4\task4.cpp(26): warning C4018: <: несоответствие типов со знаком и без знака
+     1>c:\users\evgeny\documents\visual studio 2013\projects\taskk4\taskk4\task4.cpp(38): warning C4018: <: несоответствие типов со знаком и без знака
+     1>c:\users\evgeny\documents\visual studio 2013\projects\taskk4\taskk4\task4.cpp(60): warning C4018: <: несоответствие типов со знаком и без знака
+       Link:
+         D:\Visual Studio 2013 Ultimate\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Evgeny\documents\visual studio 2013\Projects\taskk4\Debug\taskk4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Evgeny\documents\visual studio 2013\Projects\taskk4\Debug\taskk4.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Evgeny\documents\visual studio 2013\Projects\taskk4\Debug\taskk4.lib" /MACHINE:X86 Debug\task4.obj
+     1>MSVCRTD.lib(crtexew.obj) : error LNK2019: ссылка на неразрешенный внешний символ _WinMain@16 в функции ___tmainCRTStartup
+     1>C:\Users\Evgeny\documents\visual studio 2013\Projects\taskk4\Debug\taskk4.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
+     1>Сборка проекта "C:\Users\Evgeny\documents\visual studio 2013\Projects\taskk4\taskk4\taskk4.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+Затраченное время: 00:00:00.96
