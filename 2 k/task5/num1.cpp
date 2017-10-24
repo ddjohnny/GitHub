@@ -4,12 +4,15 @@
 using namespace std;
 string answer;
 
-void calc(int num,int base)
-{
+void calc(int num,int base){
     while(num > 0) {
         int rem = num % base;
-        if (rem <= 9) answer += char(rem + '0');
-            else answer += char(rem - 10 + 'A');
+        if (rem <= 9){ 
+          answer = char(rem + '0') + answer;
+        }
+        else {
+          answer = char(rem - 10 + 'A') + answer;
+        }
         num /= base;
     }
 }
